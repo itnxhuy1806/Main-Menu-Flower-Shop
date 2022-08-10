@@ -1,0 +1,204 @@
+/* menu-common*/
+.menu .container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 16px;
+}
+.menu .pointer {
+  cursor: pointer;
+}
+.menu .flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/* menu-topbar*/
+.menu .menu-topbar {
+  font-size: 13px;
+  background-color: #c34795;
+
+  color: white;
+}
+.menu .menu-topbar .inner {
+  padding: 10px 14px 10px 0;
+  justify-content: space-between;
+}
+.menu .menu-topbar svg {
+  margin-bottom: -1px;
+}
+.menu .menu-topbar .language {
+  border-right: 1px white solid;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+/* menu-body*/
+.menu .menu-body .inner {
+  width: 100%;
+  padding: 19px 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.menu .menu-body .form {
+  align-items: center;
+}
+.menu .menu-body .search-box {
+  align-items: center;
+  width: 300px;
+}
+.menu .menu-body .hamburger-btn {
+  display: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu .menu-body .search-box input {
+  border-radius: 4px;
+  border: 0px;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 45px;
+}
+.menu .menu-body .search-box input:focus {
+  outline: none;
+  border: 1px solid #c34795;
+}
+.menu .menu-body .search-box svg {
+  margin-left: -32.5px;
+}
+.menu .menu-body .logo {
+  display: flex;
+  justify-content: center;
+}
+.menu .menu-body .interaction-icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.menu .menu-body .interaction-icons .icon {
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.menu .menu-body .search.icon {
+  display: none;
+}
+.menu .menu-body .icon:not(.menu .menu-body .icon:last-child) {
+  margin-right: 25px;
+}
+
+.menu .menu-body .interaction-icons .quantity {
+  display: inline-block;
+  font-size: 12px;
+  color: white;
+  width: auto;
+  height: 12px;
+  padding: 3px 6px;
+  background: #c34795;
+  border-radius: 50%;
+  position: absolute;
+  top: -9px;
+  right: -9px;
+}
+
+/* menu-footer*/
+.menu .menu-footer {
+  text-transform: uppercase;
+  padding: 22px;
+  font-size: 13px;
+  border-top: 1px solid #e5e5e5;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu-footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+}
+.menu .menu-footer a:not(.menu .menu-footer a:first-child)::before {
+  content: "";
+  margin: 0 25px;
+  border-right: 1px solid #e5e5e5;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu .container {
+    padding: 0 14px;
+  }
+  /* menu-topbar*/
+  .menu .menu-topbar .inner {
+    padding-right: 16px;
+  }
+  /* menu-footer*/
+  .menu .menu-footer a:not(.menu .menu-footer a:first-child)::before {
+    margin: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu .container {
+    padding: 0 12px;
+  }
+  /* menu-topbar*/
+  .menu .menu-topbar .inner {
+    padding-right: 18px;
+  }
+  /* menu-body*/
+  .menu .menu-body .inner {
+    width: 100%;
+    padding: 19px 0;
+    display: flex;
+  }
+  .menu .menu-body .search-box {
+    display: none;
+  }
+  .menu .menu-body .hamburger-btn {
+    display: inline-block;
+  }
+  .menu .menu-body .logo {
+    flex-grow: 1;
+    justify-content: start;
+  }
+  .menu .menu-body img {
+    width: 120px;
+  }
+  .menu .menu-body .icon:not(.menu .menu-body .icon:last-child) {
+    margin-right: 20px;
+  }
+  .menu .menu-body .search.icon {
+    display: inline-block;
+  }
+
+  /* menu-footer*/
+  .menu .menu-footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu .container {
+    padding: 0 8px;
+  }
+  /* menu-topbar*/
+  .menu .menu-topbar .inner {
+    padding-right: 22px;
+  }
+  .menu .menu-topbar .welcome {
+    display: none;
+  }
+  .menu .menu-topbar .inner {
+    justify-content: end;
+  }
+  /* menu-body*/
+  .menu .menu-body .hamburger-btn {
+    padding-left: 5px;
+    margin-top: 5px;
+  }
+  .menu .menu-body img {
+    width: 80px;
+  }
+  .menu .menu-body .icon:not(.menu .menu-body .icon:last-child) {
+    margin-right: 15px;
+  }
+  /* menu-footer*/
+}
