@@ -1,0 +1,37 @@
+/* menu-topbar*/
+.menu .menu-topbar {
+  font-size: 13px;
+  background-color: #c34795;
+
+  color: white;
+}
+.menu .menu-topbar .inner {
+  padding: 10px 14px 10px 0;
+  justify-content: space-between;
+}
+.menu .menu-topbar svg {
+  margin-bottom: -1px;
+}
+.menu .menu-topbar .language {
+  border-right: 1px white solid;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu .menu-topbar .inner {
+    padding-right: 18px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu .menu-topbar .inner {
+    padding-right: 22px;
+  }
+  .menu .menu-topbar .welcome {
+    display: none;
+  }
+  .menu .menu-topbar .inner {
+    justify-content: end;
+  }
+}
