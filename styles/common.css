@@ -1,9 +1,12 @@
 body {
-  background-color: black;
+  background-color: grey;
 }
 /* menu-common*/
 .menu {
   background-color: #ffffff;
+}
+.menu svg {
+  display: inline-block;
 }
 .menu .container {
   max-width: 1400px;
@@ -17,13 +20,15 @@ body {
   display: flex;
   flex-wrap: nowrap;
 }
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1024px) {
   .menu .container {
     padding: 0 14px;
-  }
-  /* menu-footer*/
-  .menu .menu-footer a:not(.menu .menu-footer a:first-child)::before {
-    margin: 0 15px;
   }
 }
 

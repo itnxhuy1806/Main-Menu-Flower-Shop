@@ -2,16 +2,18 @@
 .menu .menu-topbar {
   font-size: 13px;
   background-color: #c34795;
-
   color: white;
 }
 .menu .menu-topbar .inner {
-  padding: 10px 14px 10px 0;
+  padding-right: 14px;
+  height: 36px;
   justify-content: space-between;
+  align-items: center;
 }
 .menu .menu-topbar svg {
   margin-bottom: -1px;
 }
+
 .menu .menu-topbar .language {
   border-right: 1px white solid;
   margin-right: 20px;

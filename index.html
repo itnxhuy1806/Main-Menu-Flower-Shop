@@ -68,14 +68,14 @@
                 <input
                   type="text"
                   name="search"
-                  placeholder="Search Product Here..."
+                  placeholder=" Search Product Here..."
                 />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   fill="currentColor"
-                  class="bi bi-search"
+                  class="bi bi-search pointer"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -172,19 +172,267 @@
           </div>
         </div>
       </div>
-      <div class="menu-footer flex">
+      <div class="menu-footer">
         <div class="container">
-          <div class="inner">
-            <a href="#">Home</a>
-            <a href="#">Flowers</a>
-            <a href="#">Orchids</a>
-            <a href="#">Blossom</a>
-            <a href="#">Contact us</a>
-            <a href="#">Blog</a>
-            <a href="#">More</a>
+          <div class="nav">
+            <div class="nav-item"><a href="#">Home</a></div>
+            <div class="nav-item">
+              <a href="#">Flowers </a>
+              <div class="sub-list">
+                <div class="sub-list-items">
+                  <div class="sub-list-title">White Flowers</div>
+                  <a class="sub-list-item" href="#">Lotus</a>
+                  <a class="sub-list-item" href="#">Daffodil</a>
+                  <a class="sub-list-item" href="#">Jasmine</a>
+                  <a class="sub-list-item" href="#">Vinca</a>
+                </div>
+                <div class="sub-list-items">
+                  <div class="sub-list-title">Red Flowers</div>
+                  <a class="sub-list-item" href="#">Lotus</a>
+                  <a class="sub-list-item" href="#">Daffodil</a>
+                  <a class="sub-list-item" href="#">Jasmine</a>
+                  <a class="sub-list-item" href="#">Vinca</a>
+                </div>
+                <div class="sub-list-items">
+                  <div class="sub-list-title">Summer Flowers</div>
+                  <a class="sub-list-item" href="#">Lotus</a>
+                  <a class="sub-list-item" href="#">Daffodil</a>
+                  <a class="sub-list-item" href="#">Jasmine</a>
+                  <a class="sub-list-item" href="#">Vinca</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-item"><a href="#">Orchids</a></div>
+            <div class="nav-item"><a href="#">Blossom</a></div>
+            <div class="nav-item"><a href="#">Contact us</a></div>
+            <div class="nav-item"><a href="#">Blog</a></div>
+            <div class="nav-item">
+              <a href="#">More</a>
+              <div class="mega-list">
+                <a class="mega-list-item" href="#">Lotus</a>
+                <a class="mega-list-item" href="#">Daffodil</a>
+                <a class="mega-list-item" href="#">Jasmine</a>
+                <a class="mega-list-item" href="#">Vinca</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-drawer">
+        <div class="bg"></div>
+        <div class="drawer">
+          <div class="drawer-header">
+            <div class="cancel-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-x-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="drawer-body">
+            <div class="nav sub-1">
+              <div class="nav-item"><a href="#">Home</a></div>
+              <div class="nav-item" sub="sub-2">
+                Flowers
+                <div class="arrow right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="nav-item">
+                <a href="#">Orchids</a>
+              </div>
+              <div class="nav-item">
+                <a href="#">Blossom</a>
+              </div>
+              <div class="nav-item">
+                <a href="#">Contact us</a>
+              </div>
+              <div class="nav-item">
+                <a href="#">Blog</a>
+              </div>
+              <div class="nav-item">
+                <a href="#">Lotus</a>
+              </div>
+              <div class="nav-item">
+                <a href="#">Daffodil</a>
+              </div>
+              <div class="nav-item">
+                <a href="#">Jasmine</a>
+              </div>
+              <div class="nav-item">
+                <a href="#">Vinca</a>
+              </div>
+            </div>
+            <div class="nav sub-2">
+              <div class="title">
+                <div class="arrow left" sub="sub-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                    />
+                  </svg>
+                </div>
+                Flowers
+              </div>
+              <div sub="sub-3 sub-3-1">
+                Summer Flowers
+                <div class="arrow right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div sub="sub-3 sub-3-2">
+                White Flowers
+                <div class="arrow right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div sub="sub-3 sub-3-3">
+                Red Flowers
+                <div class="arrow right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="nav sub-3 sub-3-1">
+              <div class="title">
+                <div class="arrow left" sub="sub-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                    />
+                  </svg>
+                </div>
+                Summer Flowers
+              </div>
+              <div><a href="#">Lotus</a></div>
+              <div><a href="#">Daffodil</a></div>
+              <div><a href="#">Jasmine</a></div>
+              <div><a href="#">Vinca</a></div>
+            </div>
+            <div class="nav sub-3 sub-3-2">
+              <div class="title">
+                <div class="arrow left" sub="sub-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                    />
+                  </svg>
+                </div>
+                White Flowers
+              </div>
+              <div><a href="#">Lotus</a></div>
+              <div><a href="#">Daffodil</a></div>
+              <div><a href="#">Jasmine</a></div>
+              <div><a href="#">Vinca</a></div>
+            </div>
+            <div class="nav sub-3 sub-3-3">
+              <div class="title">
+                <div class="arrow left" sub="sub-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                    />
+                  </svg>
+                </div>
+                Red Flowers
+              </div>
+              <div><a href="#">Lotus</a></div>
+              <div><a href="#">Daffodil</a></div>
+              <div><a href="#">Jasmine</a></div>
+              <div><a href="#">Vinca</a></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="/scripts/menu.js"></script>
   </body>
 </html>

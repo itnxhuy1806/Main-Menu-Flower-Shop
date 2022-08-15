@@ -1,26 +1,84 @@
 /* menu-footer*/
 .menu .menu-footer {
   text-transform: uppercase;
-  padding: 22px;
   font-size: 13px;
   border-top: 1px solid #e5e5e5;
+}
+.menu .menu-footer .nav {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu .menu-footer a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.menu .menu-footer .nav-item {
+  padding: 22px 0;
   display: inline-block;
+  position: relative;
+  z-index: 10;
 }
-.menu .menu-footer a:not(.menu .menu-footer a:first-child)::before {
+.menu .menu-footer .nav-item:hover > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 17px 0px;
+  border-bottom: 4px solid #c34795;
+}
+.menu .menu-footer .nav-item a {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+.menu .menu-footer .sub-list,
+.menu .menu-footer .mega-list {
+  display: none;
+}
+.menu .menu-footer .nav-item:hover .sub-list,
+.menu .menu-footer .nav-item .sub-list:hover {
+  position: absolute;
+  background-color: white;
+  border: #e5e5e5;
+  display: grid;
+  z-index: 1;
+  grid-template-columns: auto auto auto;
+  top: 59px;
+  left: 0;
+  padding: 10px;
+}
+.menu .menu-footer .sub-list-items * {
+  display: block;
+  padding: 10px;
+  min-width: 150px;
+  font-weight: 700;
+}
+.menu .menu-footer .sub-list-item {
+  font-weight: 300;
+}
+.menu .menu-footer .nav-item:hover .mega-list,
+.menu .menu-footer .nav-item .mega-list:hover {
+  position: absolute;
+  background-color: white;
+  border: #e5e5e5;
+  display: block;
+  top: 59px;
+  left: 0;
+  padding: 10px;
+}
+.menu .menu-footer .mega-list-item {
+  min-width: 150px;
+  display: block;
+  padding: 10px;
+}
+
+.menu
+  .menu-footer
+  .nav-item:not(.menu .menu-footer .nav-item:last-child)::after {
   content: "";
   margin: 0 25px;
   border-right: 1px solid #e5e5e5;
 }
 
 @media only screen and (max-width: 1024px) {
-  .menu .menu-footer a:not(.menu .menu-footer a:first-child)::before {
+  .menu .menu-footer a:not(.menu .menu-footer a:last-child)::after {
     margin: 0 15px;
   }
 }
